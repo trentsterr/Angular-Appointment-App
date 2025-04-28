@@ -3,9 +3,10 @@ import { Appointment } from '../models/appointment';
 import { OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-appointment-list',
-  templateUrl: './appointment-list.component.html',
-  styleUrl: './appointment-list.component.css'
+    selector: 'app-appointment-list',
+    templateUrl: './appointment-list.component.html',
+    styleUrl: './appointment-list.component.css',
+    standalone: false
 })
 export class AppointmentListComponent implements OnInit {
   
