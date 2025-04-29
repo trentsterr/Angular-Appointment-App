@@ -8,10 +8,12 @@
         </div>
         <div class="row mt-3">
             <div class="col-md-6">
-                <input class="form-control" [(ngModel)]= "newAppointmentTitle" placeholder="Appointment Description">
+                <input class="form-control" [(ngModel)]= "newAppointmentTitle" id="description" placeholder="Appointment Description">
+				<label for="description"></label>
             </div>
             <div class="col-md-4">
-                <input class="form-control" [(ngModel)]="newAppointmentDate" type="date" placeholder="Appointment Date">
+                <input class="form-control" [(ngModel)]="newAppointmentDate" type="date" id="appt" placeholder="Appointment Date">
+				<label for="appt"></label>
             </div>
             <div class ="col-md-2">
                 <button class="btn btn-primary w-100" (click)="addAppointment()">Add</button>
