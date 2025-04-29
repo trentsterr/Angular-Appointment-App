@@ -34,8 +34,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
+            "styles": [ {
+              "input": "src/styles.css",
+              "inject": false
+            }
             ],
             "scripts": []
           },
