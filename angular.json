@@ -35,10 +35,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [ {
-              "input": "src/styles.css",
-              "inject": false
-            }
+            "styles": [ 
+			  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
             ],
             "scripts": []
           },
