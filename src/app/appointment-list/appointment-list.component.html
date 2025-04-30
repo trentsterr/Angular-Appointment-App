@@ -8,14 +8,14 @@
         </div>
         <div class="row mt-3">
             <div class="col-md-6">
-                <input class="form-control" [(ngModel)]= "newAppointmentTitle" id="description" placeholder="Appointment Description">
-				<label for="description"></label>
+                <label for="description">Appointment Description</label>
+                <input class="form-control mb-3" [(ngModel)]="newAppointmentTitle" id="description" placeholder="Enter description">
             </div>
             <div class="col-md-4">
-                <input class="form-control" [(ngModel)]="newAppointmentDate" type="date" id="appt" placeholder="Appointment Date">
-				<label for="appt"></label>
+                <label for="appt">Appointment Date</label>
+                <input class="form-control mb-3" [(ngModel)]="newAppointmentDate" type="date" id="appt" placeholder="Select date">
             </div>
-            <div class ="col-md-2">
+            <div class="col-md-2">
                 <button class="btn btn-primary" (click)="addAppointment()">Add</button>
             </div>
         </div>
@@ -24,9 +24,8 @@
     <h2 class="text-center mt-5">Appointments</h2>
     <ul class="list-group mt-3">
         <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let appointment of appointments; index as i">
-                {{appointment.title}} {{appointment.date | date:'dd.MM.yyyy'}}
-                <button class="btn btn-secondary" (click)="deleteAppointment(i)">Delete</button>
+            {{appointment.title}} {{appointment.date | date:'dd.MM.yyyy'}}
+            <button class="btn btn-secondary" (click)="deleteAppointment(i)">Delete</button>
         </li>
     </ul>
 </div>
-
