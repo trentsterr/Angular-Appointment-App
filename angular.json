@@ -26,7 +26,7 @@
             "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
-			"baseHref": "/Angular-Appointment-App/",
+            "baseHref": "/Angular-Appointment-App/",
             "polyfills": [
               "zone.js"
             ],
@@ -35,8 +35,8 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [ 
-			  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -59,12 +59,12 @@
             },
             "development": {
               "optimization": {
-				"scripts": true,
-				"styles": {
-					"minify": true,
-					"inlineCritical": false
-				}
-			  },
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              },
               "extractLicenses": false,
               "sourceMap": true
             }
@@ -102,14 +102,19 @@
               "src/assets"
             ],
             "styles": [
-			"node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "docs",
+            "netlifyToken": "nfp_TiPL4bq5vEhSV7iDE6YA5Dp6rSdT5ioAd31a",
+            "siteId": "bbf022a2-407b-4868-9922-d0be97bdd76f"
+          }
         }
       }
     }
